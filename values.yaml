@@ -22,7 +22,7 @@ operator:
     - name: OPERATOR_STS_ENABLED
       value: "on"
     - name: CLUSTER_DOMAIN
-      value: "storage.dev.itlusions.com"
+      value: "cluster.local"
   # An array of additional annotations to be applied to the operator service account
   serviceAccountAnnotations: []
   # additional labels to be applied to operator resources
@@ -97,7 +97,7 @@ operator:
   #
   # The cluster must have sufficient number of available worker nodes to fulfill the request.
   # Operator pods deploy with pod anti-affinity by default, preventing Kubernetes from scheduling multiple pods onto a single Worker node.
-  replicaCount: 3
+  replicaCount: 4
   ###
   # The Kubernetes `SecurityContext <https://kubernetes.io/docs/tasks/configure-pod-container/security-context/>`__ to use for deploying Operator resources.
   #
